@@ -20,12 +20,12 @@ public class App {
         System.out.println("caja decimal: "+ c1);
         System.out.println("¿La caja de texto está vacía?:"+ c2);
 
-        Par<Integer , String> c1 = new Par<>(1, "Juan Perez");
-        
+        Par<Integer, String> c8 = new Par<>(1, "Juan Perez");
+        Par<String, Integer> c7 = new Par<>("Edad", 20);
         Par<String, Double> c3 = new Par<>("Promedio", 8.75);
 
-        System.out.println(c1);
-        System.out.println(c2);
+        System.out.println(c8);
+        System.out.println(c7);
         System.out.println(c3);
         
     }
