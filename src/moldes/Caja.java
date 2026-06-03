@@ -13,14 +13,7 @@ public class Caja<T> {
     }
     
 
-    public Caja(T t) {
-        this.t = t;
-    }
-
-    @Override
-    public String toString() {
-        return " " + t ;
-    }
+    
 
 
     

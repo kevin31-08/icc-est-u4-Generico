@@ -15,14 +15,7 @@ public class Par<K,V> {
     public void setV(V v) {
         this.v = v;
     }
-    @Override
-    public String toString() {
-        return "Par [k=" + k + ", v=" + v + "]";
-    }
-    public Par(K k, V v) {
-        this.k = k;
-        this.v = v;
-    }
+    
 
     
 

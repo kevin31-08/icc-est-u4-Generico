@@ -1,32 +1,44 @@
-import java.util.ArrayList;
+
+
 
 import moldes.Caja;
 import moldes.Par;
 
-public class App {
+public class App { 
     public static void main(String[] args) throws Exception {
-        
-        Caja<String> pa = new Caja<>("Hola mundo");
-        Caja<Integer> num1 = new Caja<>(100);
-        Caja<Double> c1 = new Caja<>(9.75);
-        Caja<Boolean> c2 = new Caja<>(false);
+       Caja<String> stringCaja = new Caja<>();
+       Caja<Integer> integerCaja = new Caja<>();
+       Caja<Double> doubleCaja = new Caja<>();
+       Caja<Boolean> booleanCaja = new Caja<>();
 
-        System.out.println("=== PRACTICA GENERICOS ===");
+       stringCaja.setT("Hola mundo");
+       integerCaja.setT(80);
+       doubleCaja.setT(10.5);
+       booleanCaja.setT(false);
+
+       Par<Integer,String> datosPar = new Par<>();
+       Par<String,Integer> datosPar2 = new Par<>();
+       Par<String,Double> datosPar3 = new Par<>();
+
+       datosPar.setK(1);
+       datosPar.setV("Evelyn Perez");
+       datosPar2.setK("Edad");
+       datosPar2.setV(21);
+       datosPar3.setK("Promedio");
+       datosPar3.setV(9.4);
+       System.out.println("-----Uso de Caja<T>-----");
+       System.out.println("Caja de texto : " + stringCaja.getT());
+       System.out.println("Caja de entero : " + integerCaja.getT());
+       System.out.println("Caja de decimal : " + doubleCaja.getT());
+       System.out.println("¿ La caja de texto esta vacia: ? " + booleanCaja.getT());
+       System.out.println();
+
+       System.out.println("-----Uso de Par<K, V>-----");
+       System.out.println("Clave : " + datosPar.getK()+ " | " + "Valor: " + datosPar.getV());
+       System.out.println("Clave : " + datosPar2.getK()+ " | " + "Valor: " + datosPar2.getV());
+       System.out.println("Clave : " + datosPar3.getK()+ " | " + "Valor: " + datosPar3.getV());
 
 
-        System.out.println("--- Uso de Caja<T> ---");
-        System.out.println("caja de texto: " + pa);
-        System.out.println("caja de entero:"+ num1);
-        System.out.println("caja decimal: "+ c1);
-        System.out.println("¿La caja de texto está vacía?:"+ c2);
 
-        Par<Integer, String> c8 = new Par<>(1, "Juan Perez");
-        Par<String, Integer> c7 = new Par<>("Edad", 20);
-        Par<String, Double> c3 = new Par<>("Promedio", 8.75);
-
-        System.out.println(c8);
-        System.out.println(c7);
-        System.out.println(c3);
-        
     }
 }
