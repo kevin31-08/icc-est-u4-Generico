@@ -17,6 +17,5 @@
 ![alt text](image.png)
 
 ![Captura de salida en consola](assets/02-app-implementacion-code.png)
-       datosPar3.setV(9.4);
-
+       ![alt text](image-1.png)
 
